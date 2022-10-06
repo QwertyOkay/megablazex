@@ -207,7 +207,7 @@ button {
 .hero__title {
     position:absolute;
     font-size: 48px!important; 
-    top: 30%; left:10%;
+    top: 80%; left:10%;
     line-height: 60px;
     letter-spacing: normal;
     font-weight: 500;
@@ -230,6 +230,13 @@ button {
     }
 }
 
+.header {
+    @media screen and (min-width:1200px) {
+        height: 101px;
+        
+    }
+}
+
 .footer__section {
     display: flex;
     justify-content: space-between;
@@ -237,10 +244,10 @@ button {
     padding: 8px;
     max-width: 1470px;
     font-size: 0.99rem;
-    border-top: solid 2px #979797;
+    // border-top: solid 2px #979797;
     @media screen and (min-width:1200px) {
         padding: 20px;
-        border-top: solid 2px #979797;
+        
     }
 }
 

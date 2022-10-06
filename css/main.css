@@ -1634,7 +1634,7 @@ button {
 .hero__title {
   position: absolute;
   font-size: 48px !important;
-  top: 30%;
+  top: 80%;
   left: 10%;
   line-height: 60px;
   letter-spacing: normal;
@@ -1662,6 +1662,12 @@ button {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .header {
+    height: 101px;
+  }
+}
+
 .footer__section {
   display: flex;
   justify-content: space-between;
@@ -1669,12 +1675,10 @@ button {
   padding: 8px;
   max-width: 1470px;
   font-size: 0.99rem;
-  border-top: solid 2px #979797;
 }
 @media screen and (min-width: 1200px) {
   .footer__section {
     padding: 20px;
-    border-top: solid 2px #979797;
   }
 }
 
