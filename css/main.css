@@ -272,7 +272,6 @@ ul, ol, dd {
 h1 {
   font-weight: normal;
   margin-left: 16px;
-  letter-spacing: 0.1em;
   font-size: 36px;
   font-weight: normal;
   text-transform: uppercase;
@@ -415,34 +414,6 @@ u, ins {
 .modal__backdrop5.is-hidden5 > .modal5 {
   opacity: 0;
   transform: translate(-50%, -50%) scale(2.9);
-}
-
-.modal5 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  text-align: center;
-  transform: translate(-50%, -50%) scale(1);
-  width: 90%;
-  height: auto;
-  padding: 40px;
-  background-color: rgba(246, 246, 244, 0.9294117647);
-  opacity: 1;
-  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-  transition-property: opacity, transform;
-  transition-duration: var(--duration);
-  transition-timing-function: var(--function);
-}
-@media screen and (min-width: 480px) {
-  .modal5 {
-    width: 354px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .modal5 {
-    width: 528px;
-  }
 }
 
 .modal__close5 {
@@ -1502,6 +1473,8 @@ a {
 }
 
 .main__promo {
+  position: fixed;
+  z-index: 6;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -1511,7 +1484,7 @@ a {
   background-size: 100%;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: bottom;
   background-attachment: fixed;
   color: #FFF;
   height: 40px;
@@ -1653,8 +1626,8 @@ button {
 }
 @media screen and (min-width: 1200px) {
   .hero__section {
-    background-image: url("../../img/hero.jpg");
-    height: 80vh;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.1), url("../../img/hero.jpg"));
+    height: 100vh;
     width: 100%;
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -1675,11 +1648,12 @@ button {
   .hero__title {
     position: absolute;
     font-size: 48px !important;
-    top: 70%;
+    top: 66%;
     left: 10%;
     line-height: 60px;
     letter-spacing: normal;
     font-weight: 500;
+    background-color: rgba(0, 0, 0, 0.35);
   }
 }
 
