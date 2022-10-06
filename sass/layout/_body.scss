@@ -116,11 +116,7 @@ font-size: 1.4rem;
 }
 
 .wrapper__items-desc {
-    margin-bottom: 10px;
-    font-size: 12px;
-    color: rgb(68, 66, 66); font-size: 14px;
     line-height: 21px;
-    height: 100%;
 }
 
 .wrapper__items-promo {
@@ -256,4 +252,103 @@ button {
        font-size: 1.6rem;
 } 
     }
+
+    .wrapper__items-img {
+        position: relative; 
+    }
+
+    .wrapper__img {
+        display: block;width: 100%;height: 100%;position: relative;top: 0%;
+    }
     
+    .h1__hidden {
+    display: none;
+    position: absolute;
+    top: -1%;
+    left: 0%;
+    padding: 0.5em 0;
+    margin: 0;
+    font-size: 1.6em !important;
+    color: #fff !important;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    
+    width: 100%;
+    text-align: center;
+    z-index: 99;
+    }
+
+    .h1__hidden:hover {
+        display: none;
+        position: absolute;
+        content: "text";
+    top: -5%;
+    left: 0%;
+    padding: 0.5em 0;
+    margin: 0;
+    font-size: 1.6em !important;
+    color: #fff !important;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    
+    width: 100%;
+    text-align: center;
+    z-index: 99;
+    }
+
+
+      
+      .hide {
+        display: none;
+        background: #000;
+        color: #fff;
+        text-align: center;
+      }
+      
+      .wrapper__items-img:hover .hide {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        content: "text";
+    top: 0%;
+    left: 0%;
+    padding: 0.5em 0;
+    margin: 0;
+    font-size: 1.6em !important;
+    color: #fff !important;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 96%;
+    
+    width: 100%;
+    text-align: center;
+    z-index: 99;
+      }
+
+      .wrapper__buttons-sec {
+        margin: 0;
+        line-height: 1em;
+        cursor: pointer;
+        position: relative;
+        font-family: inherit;
+        text-decoration: none;
+        overflow: visible;
+        padding: 10px 10px;
+        font-weight: 700;
+        font-weight: 700;
+        text-transform: uppercase;
+        left: auto;
+        color: #101010;
+        border: 1px solid #101010;
+        background: #fff;
+        margin-top: 10px;
+        display: block;
+        text-align: center;
+        // font-size: .95em;
+        padding: 14px 10px;
+      }
+
+      .wrapper__buttons-sec:hover {
+        background-color: #e22c5f;
+        color: #000;
+      }
