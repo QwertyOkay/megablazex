@@ -850,7 +850,7 @@ u, ins {
 }
 
 .modal__input5:focus + .icon__modal-img {
-  fill: #3c3027;
+  fill: #e22c5f;
 }
 
 .modal__input5._error {
@@ -962,7 +962,7 @@ u, ins {
   padding: 10px 29px;
   height: 50px;
   color: #fff;
-  background-color: #9f7f66;
+  background-color: #e22c5f;
   font-weight: 200;
   font-size: large;
   line-height: 1.87;
@@ -2032,7 +2032,7 @@ button {
   min-height: 30px;
   min-width: 30px;
   padding: 0;
-  background-color: #3c3027;
+  background-color: #e22c5f;
   color: #000;
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -2055,7 +2055,7 @@ button {
   min-height: 30px;
   min-width: 30px;
   padding: 0;
-  background-color: #3c3027;
+  background-color: #e22c5f;
   color: #000;
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
