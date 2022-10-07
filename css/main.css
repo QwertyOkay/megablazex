@@ -1805,6 +1805,10 @@ button {
   font-weight: 400;
 }
 
+.header__color {
+  background-color: rgba(243, 243, 245, 0.2588235294);
+}
+
 .icon__raiting {
   width: 150px;
 }
