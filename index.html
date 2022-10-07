@@ -334,6 +334,30 @@ justify-content: center;">
   </footer>
   </main>
 
+  <script>
+    let prevScrollPosition = window.pageYOffset;
+
+    window.onscroll = function () {
+
+      let currentScrollPosition = window.pageYOffset;
+
+      if (prevScrollPosition > currentScrollPosition) {
+
+        document.querySelector("header").style.top = "5%",
+        document.querySelector("header").style.zIndex = "5";
+       
+        
+
+
+      } else {
+        document.querySelector("header").style.top = "0%",
+        document.querySelector("header").style.zIndex = "7";
+        
+      }
+      prevScrollPosition = currentScrollPosition;
+      }
+  </script>
+
   <div class="modal__backdrop1 is-hidden1" data-modal1>
     <div class="modal1" data-form-modal1>
         
@@ -342,31 +366,6 @@ justify-content: center;">
                 <use href="./img/icons.svg#icon-close"></use>
             </svg>
         </button>
-
-
-        <script>
-          let prevScrollPosition = window.pageYOffset;
-
-          window.onscroll = function () {
-
-            let currentScrollPosition = window.pageYOffset;
-
-            if (prevScrollPosition > currentScrollPosition) {
-
-              document.querySelector("header").style.top = "5%",
-              document.querySelector("header").style.zIndex = "5";
-             
-              
-
-
-            } else {
-              document.querySelector("header").style.top = "0%",
-              document.querySelector("header").style.zIndex = "7";
-              
-            }
-            prevScrollPosition = currentScrollPosition;
-            }
-        </script>
 
         <div class="modal4__pad">
         <span class="modal__hero-text4">
